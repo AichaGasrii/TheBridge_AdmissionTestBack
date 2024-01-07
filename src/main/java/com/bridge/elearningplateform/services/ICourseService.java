@@ -8,8 +8,7 @@ import java.util.List;
 
 public interface ICourseService {
 
-    public boolean storeFileName(Mult
-                                         ipartFile file) ;
+    public boolean storeFileName(MultipartFile file) ;
     public Course addCourse(String title, double price, MultipartFile image) ;
     public Course updateCourse(Integer id, String title, double price, MultipartFile image);
     List<Course> getAllCourses();
