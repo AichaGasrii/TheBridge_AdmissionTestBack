@@ -24,7 +24,7 @@ public class ICourseIMP implements ICourseService{
     private CourseRepository courseRepository;
 
     // Adds a file to the server's file system. Returns true if the file is successfully uploaded.
-// Cette méthode ne sauvegarde plus le fichier, mais stocke uniquement le nom du fichier
+// Cette stocke uniquement le nom du fichier
     public boolean storeFileName(MultipartFile file) {
         String fileName = null; // Déclaration en dehors du bloc try pour élargir la portée
         try {
